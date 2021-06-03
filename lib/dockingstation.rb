@@ -11,6 +11,7 @@ class DockingStation
         @bike
     end
     def dock(bike)
+        fail "Dock station is full" if @bike
         @bike = bike
     end 
    
